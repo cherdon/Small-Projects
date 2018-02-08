@@ -1,4 +1,4 @@
-class Point:
+class Coordinate:
     '''
     A custom data type representing a point
     '''
@@ -6,7 +6,7 @@ class Point:
     y = 0
 
 
-def find_area_of_triangle(p1, p2, p3):
+def area_of_triangle(p1, p2, p3):
     '''
     A function to calculate area of a rectangle defined
     by two points. Expects objects of Point class
@@ -33,19 +33,19 @@ def find_area_of_triangle(p1, p2, p3):
 '''
 Program to test the code
 '''
-p1 = Point()
+p1 = Coordinate()
 p1.x = float(input("Enter x coordinate of first point: \n"))
 p1.y = float(input("Enter y coordinate of first point: \n"))
 
 
-p2 = Point()
+p2 = Coordinate()
 p2x = float(input("Enter x coordinate of second point: \n"))
 p2y = float(input("Enter y coordinate of second point: \n"))
 
 
-p3 = Point()
+p3 = Coordinate()
 p3x = float(input("Enter x coordinate of third point: \n"))
 p3y = float(input("Enter y coordinate of third point: \n"))
 
 
-print("The area is: " + str(find_area_of_triangle(p1, p2, p3)))
+print("The area is: " + str(area_of_triangle(p1, p2, p3)))

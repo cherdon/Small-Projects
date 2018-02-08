@@ -1,12 +1,15 @@
+import math
+
 def area_vol_cylinder(r, l):
     radius = r
     length = l
-    area = radius * radius * float(pi)
+    area = radius * radius * math.pi
     volume = area * length
 
-    return volume
+    return area, volume
 
-radius = float(input("What is the radius? \n"))
-length = float(input("What is the length of the cylinder? \n"))
+r = float(input("What is the radius? \n"))
+l = float(input("What is the length of the cylinder? \n"))
 output = area_vol_cylinder(r, l)
-print(output)
+a, v = area_vol_cylinder(r, l)
+print(round(a,2), round(v,2))

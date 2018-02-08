@@ -6,3 +6,5 @@ def wind_chill_temp(to, v):
 
 to = float(input("What is the outside temperature? \n"))
 v = float(input("What is the speed in miles per hour? \n"))
+output = round(wind_chill_temp(to, v),5)
+print (output)

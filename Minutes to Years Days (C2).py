@@ -2,8 +2,10 @@ def minutes_to_years_days(m):
     my_m = m
     d = 1440
     y = 365
+    years = int((my_m/d)/y)
+    days = int((my_m/d)-(years*y))
 
-    return int((my_m/d)/y),(float((my_m/d)/y)-int((my_m/d)/y))*y
+    return years, days
 
 m = float(input("How many minutes?"))
 output = minutes_to_years_days(m)

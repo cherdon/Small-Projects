@@ -1,4 +1,4 @@
-def celsius_to_farenheit(temp):
+def celsius_to_fahrenheit(temp):
     my_temp = temp
     a = 9/5
     b = 32
